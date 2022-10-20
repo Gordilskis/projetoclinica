@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #fff;
+}
+main {
+    color: #0000008c;
+    margin-bottom: 60px;
+}
+.container-topo{
+    background-color: #00cad1;
+    max-width: 100%;
+}
+.topo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.button-home img{
+    height: 60px;
+}
+.links-topo{
+    margin-left: 15px;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+}
+.links-topo a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+.links-topo a:hover{
+    color: #004b4c;
+}
+.conteiner-img{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url(../assets/recepcao.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.container-intro{
+    color: white;
+    max-width: 1024px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+.container-intro h1{
+    font-weight: 400;
+    font-size: 44px;
+}
+.sobre{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sobre-title, .especialidades-txt{
+    height: 100px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sobre-title h2, .especialidades-txt h2{
+    margin-bottom: 10px;
+}
+.sobre-title p, .especialidades-txt p{
+    width: 550px;
+    text-align: center;
+}
+.sobre-detalhe{
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre-detalhe h2{
+    font-weight: 400;
+}
+.sobre-detalhe-txt{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.especialidades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.especialidades-txt{
+    padding: 10px;
+}
+.especialidades-imgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+.especialidades-box{
+    border-radius: 3px;
+    box-shadow: 0px 1px 10px rgb(0 0 0 / 50%);
+    margin: 20px;
+    width: calc(100% / 3 - 40px);
+}
+.especialidades-box img{
+    height: 170px;
+}
+.especialidades-box figcaption{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.especialidades a{
+    text-decoration: none;
+    color: white;
+    background-color: #00cad1;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 3px;
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 20px;
+    width: 100%;
+}
+.contato h3{
+    margin-bottom: 20px;
+}
+.contato p{
+    margin: 10px;
+}
+.contato-ps{
+    text-align: center;
+    width: 630px;
+    max-width: 1024px;
+}
+.contato iframe{
+    margin-right: 10px;
+}
+.rodape{
+    background-color: #106669;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    padding: 10px;
+}
+.rodape img{
+    width: 120px;
+    margin: 8px;
+}
+.rodape p{
+    margin: 10px;
+}
+@media (max-width:1024px){
+    .conteiner-img{
+        height: 400px;
+    }
+    .container-intro h1{
+        font-size: 36px;
+    }
+    .especialidades-box{
+        width: calc(100%/3 - 40px);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+    .contato iframe{
+        width: 90%;
+    }
+}
+@media (max-width:728px){
+    .conteiner-img{
+        height: 300px;
+    }
+    .especialidades-imgs{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+    .especialidades-box{
+        width: calc(80%/2 - 40px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contato iframe{
+        width: 90%;
+    }
+}
+@media (max-width: 425px){
+    .topo{
+        flex-direction: column;
+        width: 100%;
+    }
+    .button-home{
+        width: 95%;
+        border-bottom: 1px solid #0a9499;
+        display: flex;
+        justify-content: center;
+    }
+    .links-topo{
+        width: 100%;
+        justify-content: space-between;
+        font-size: 12px;
+    }
+    .conteiner-img{
+        height: 200px;
+    }
+    .container-intro h1{
+        font-size: 26px;
+    }
+    .sobre-detalhe img{
+        display: none;
+    }
+    .especialidades-imgs{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .especialidades-box{
+        width: calc(100% - 40px);
+    }
+    .contato iframe{
+        width: 90%;
+    }
+    .sobre-title p, .especialidades-txt p{
+        width: 320px;
+        text-align: center;
+    }
+    .sobre-detalhe-txt {
+        width: 320px;
+    }
+    .contato-ps{
+        width: 320px;
+    }
+}
